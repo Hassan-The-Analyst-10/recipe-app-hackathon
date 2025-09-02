@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Recommender</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Recipe Recommender</h1>
+            <p>Find delicious recipes based on ingredients you have. Our AI-powered system will suggest the best recipes for you!</p>
+        </header>
+        
+        <div class="app-container">
+            <div class="ingredients-section">
+                <h2>Your Ingredients</h2>
+                <div class="input-group">
+                    <input type="text" id="ingredient-input" placeholder="Add ingredient (e.g., chicken, tomatoes)">
+                    <button id="add-ingredient">Add</button>
+                </div>
+                
+                <div class="ingredients-list" id="ingredients-list">
+                    <!-- Ingredients will be added here -->
+                </div>
+                
+                <div class="actions">
+                    <button id="get-recipes">Get Recipes</button>
+                    <button id="clear-all">Clear All</button>
+                    <button id="view-history">History</button>
+                </div>
+            </div>
+            
+            <div class="recipes-section">
+                <h2>Suggested Recipes</h2>
+                <div class="recipes-grid" id="recipes-container">
+                    <!-- Recipe cards will be added here -->
+                    <div class="recipe-card">
+                        <div class="recipe-image">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <div class="recipe-content">
+                            <h3>Add ingredients to get started</h3>
+                            <p>Enter the ingredients you have on hand, and our AI will recommend delicious recipes you can make.</p>
+                            <div class="recipe-meta">
+                                <span>Ready in: -</span>
+                                <span class="tech-badge">AI Powered</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="features">
+            <h2>How It Works</h2>
+            <div class="features-grid">
+                <div class="feature">
+                    <i class="fas fa-list-alt"></i>
+                    <h3>Select Ingredients</h3>
+                    <p>Choose from your available ingredients or add custom ones</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-brain"></i>
+                    <h3>AI Processing</h3>
+                    <p>Our system uses OpenAI API to analyze your ingredients</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-utensils"></i>
+                    <h3>Get Recipes</h3>
+                    <p>Receive personalized recipe recommendations</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-database"></i>
+                    <h3>MySQL Database</h3>
+                    <p>All recipes are saved to the database for future reference</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
